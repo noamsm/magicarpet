@@ -1,0 +1,47 @@
+/* This is heavily inspired by https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+/* Make relative sizes be affect the whole component and not just the content box */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    /* Remove all default margins */
+    margin: 0;
+    /* change default ratio between character height and line height to WCAG criteria */
+    line-height: calc(1em + 0.5rem);
+}
+
+body {
+    /* Disable subpixel antialiasing */
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    /* Removes line height padding from images */
+    display: block;
+    /* Makes large images stop overflowing from their container */
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    /* Make input elements inherit font sizes and styles instead of having seperate defaults */
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    /* Make long words break in the middle instead of overflowing outside of the container */
+    overflow-wrap: break-word;
+    /* Add hyphens to words that are broken because of overflow */
+    hyphens: auto;
+}
+
+p {
+    /* Make paragraph wrap always leave at least 2 words at the last line */
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* Try to make each wrapped line the same length */
+    text-wrap: balance;
+}
