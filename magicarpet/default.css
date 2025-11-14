@@ -1,1 +1,11 @@
 @import url(core/css_reset.css);
+@import url(core/components/header.css);
+
+/* Variable definitions */
+:root {
+    --background-color: #F2F2F2;
+    --main-color: #D9D9D9;
+    --secondary-color: #A6A6A6;
+    --explicit-color: #595959;
+    --text-color: #404040;
+}
