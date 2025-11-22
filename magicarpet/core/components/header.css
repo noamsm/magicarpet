@@ -24,6 +24,14 @@ header a, header p, header dropdown {
 
 header a:has(> img), header p:has(> img) {
     padding: 0;
+    width: fit-content;
+}
+
+header img {
+    max-width: initial;
+    width: auto;
+    height: 100%;
+    min-height: 100%;
 }
 
 header a {
